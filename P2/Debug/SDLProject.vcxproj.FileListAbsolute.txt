@@ -1,3 +1,0 @@
-C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P1\P1\Debug\SDLProject.exe
-C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P1-final\Debug\SDLProject.exe
-C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P2\Debug\SDLProject.exe
