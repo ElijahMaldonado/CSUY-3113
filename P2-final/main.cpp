@@ -36,14 +36,15 @@ float ball_speed = 1.0f;
 
 bool collisionCheck() {
 
-    float xdist = fabs(playerOne_position.x - ball_position.x) - ((.05 + .15) / 2.0f);
-    float ydist = fabs(playerOne_position.y - ball_position.y) - ((.1 + .15) / 2.0f);
-    float xTwodist = fabs(playerTwo_position.x - ball_position.x) - ((.05 + .15) / 2.0f);
-    float yTwodist = fabs(playerTwo_position.y - ball_position.y) - ((.1 + .15) / 2.0f);
+    float xdist = fabs(playerOne_position.x - ball_position.x) - ((.5 + .15) / 2.0f);
+    float ydist = fabs(playerOne_position.y - ball_position.y) - ((1.5 + .15) / 2.0f);
+    float xTwodist = fabs(playerTwo_position.x - ball_position.x) - ((.5 + .15) / 2.0f);
+    float yTwodist = fabs(playerTwo_position.y - ball_position.y) - ((1.5 + .15) / 2.0f);
   
     if (xdist < 0 && ydist < 0 || xTwodist < 0 && yTwodist < 0) {
         return true;
     }
+    return false;
 }
 
 GLuint LoadTexture(const char* filePath) { 
@@ -228,11 +229,6 @@ void Update() {
     
     if (collisionCheck()) {
         ball_movement.x = -ball_movement.x;
-        ball_movement.y = -ball_movement.y;
-    }
-    if (collisionCheck) {
-        ball_movement.x = -ball_movement.x;
-        ball_movement.y = -ball_movement.y;
     }
 }
 
