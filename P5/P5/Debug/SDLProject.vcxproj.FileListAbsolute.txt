@@ -2,3 +2,4 @@ C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P3\SDLProject\Debug\SDLProject.exe
 C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P3\P3\Debug\SDLProject.exe
 C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P4\P4\Debug\SDLProject.exe
 C:\Users\SNLPR\OneDrive\Desktop\CS-UY3113\P5- sooon\P5\Debug\SDLProject.exe
+C:\Users\SNLPR\Documents\CSUY-3113\P5\P5\Debug\SDLProject.exe

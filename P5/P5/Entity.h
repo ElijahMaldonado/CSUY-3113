@@ -1,3 +1,4 @@
+#pragma once
 #define GL_SILENCE_DEPRECATION
 
 #ifdef _WINDOWS
@@ -32,11 +33,13 @@ public:
     float width = 1;
     float height = 1;
     int winCond = 3;
+    int lives = 3;
 
     bool jump = false;
     float jumpPower = 1;
     bool fail = false;
     bool win = false;
+    bool soundCheck = false;
 
     float speed;
 

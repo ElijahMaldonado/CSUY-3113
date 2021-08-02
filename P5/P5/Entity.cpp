@@ -47,8 +47,9 @@ void Entity::CheckCollisionsX(Entity *objects, int objectCount) {
                 collided = true;
                 
                 if (this->entityType == PLAYER && object->entityType == ENEMY) {
-                    this->isActive = false;
-                    this->fail = true;
+                    //this->isActive = false;
+                    this->lives -= 1;
+                    this->position = glm::vec3(5, 0, 0);
                 }
 
             } else if (velocity.x < 0) { 
@@ -58,8 +59,9 @@ void Entity::CheckCollisionsX(Entity *objects, int objectCount) {
                 collided = true;
 
                 if (this->entityType == PLAYER && object->entityType == ENEMY) {
-                    this->isActive = false;
-                    this->fail = true;
+                    //this->isActive = false;
+                    this->lives -= 1;
+                    this->position = glm::vec3(5, 0, 0);
                 }
             }
         }
@@ -67,6 +69,7 @@ void Entity::CheckCollisionsX(Entity *objects, int objectCount) {
 }
 
 void Entity::CheckCollisionsY(Entity *objects, int objectCount) { 
+
 
     for (int i = 0; i < objectCount; i++) { 
         Entity *object = &objects[i];        
@@ -88,7 +91,7 @@ void Entity::CheckCollisionsY(Entity *objects, int objectCount) {
                 
                 if (this->entityType == PLAYER && object->entityType == ENEMY) {
                     object->isActive = false;
-                    winCond -= 1;
+                    this->collidedWithEnemyTop = true;
                 }
 
 
@@ -266,6 +269,7 @@ void Entity::Update(float deltaTime, Entity *player, Entity *objects, int object
     collidedWithEnemyLeft = false;
     collidedWithEnemyRight = false;
     
+    
     if (entityType == ENEMY) {
         AI(player);
     }
@@ -312,9 +316,11 @@ void Entity::Update(float deltaTime, Entity *player, Entity *objects, int object
     modelMatrix = glm::mat4(1.0f);
     modelMatrix = glm::translate(modelMatrix, position);
 
+    /*
     if (winCond == 0) {
         player->win = true;
     }
+    */
 }
 
 void Entity::DrawSpriteFromTextureAtlas(ShaderProgram *program, GLuint textureID, int index)

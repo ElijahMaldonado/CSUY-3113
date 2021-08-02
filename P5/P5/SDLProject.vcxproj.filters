@@ -30,6 +30,21 @@
     <ClCompile Include="Util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShaderProgram.h">
@@ -44,28 +59,43 @@
     <ClInclude Include="Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="level1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="glew32.dll" />
     <CopyFileToFolders Include="SDL2.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="george_0.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="font1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="dirt.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="alienenemy.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="character_femaleAdventurer_sheet.png">
+    <Image Include="tiles_packed.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="tiles_packed.png">
+    <Image Include="font2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="character_robot_sheetHD.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\OneDrive\Desktop\industrial_tilesheet.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
@@ -74,12 +104,6 @@
     <None Include="..\..\CS3113-master\Libraries\WindowsLibraries\SDL2_mixer\lib\x86\smpeg2.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="..\..\CS3113-master\Assets\Audio\bounce.wav">
-      <Filter>Resource Files</Filter>
-    </Media>
-    <Media Include="..\..\CS3113-master\Assets\Audio\dooblydoo.mp3">
-      <Filter>Resource Files</Filter>
-    </Media>
     <Media Include="converted_OldSchool1.wav">
       <Filter>Resource Files</Filter>
     </Media>
@@ -87,6 +111,9 @@
       <Filter>Resource Files</Filter>
     </Media>
     <Media Include="Siren1Loop.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="computerNoise_002.mp3">
       <Filter>Resource Files</Filter>
     </Media>
   </ItemGroup>
