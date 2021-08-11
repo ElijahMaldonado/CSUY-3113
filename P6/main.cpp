@@ -102,7 +102,7 @@ void Initialize() {
     sceneList[4] = new Level4();
     sceneList[5] = new Level5();
     
-    SwitchToScene(sceneList[2]);
+    SwitchToScene(sceneList[0]);
 
 }
 
